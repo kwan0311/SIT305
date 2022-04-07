@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Metre">
+    <Spinner
+        android:id="@+id/UnitSpinner"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/unit_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/UserValue1"
+        android:layout_width="186dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColorLink="#DA33BD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Metre1"
+        android:layout_width="140dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="193dp"
+        android:text="@string/Result1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Gram"
+        android:layout_width="140dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="212dp"
+        android:text="Gram"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toEndOf="@+id/Metre1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Ounce"
+        android:layout_width="140dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="28dp"
+        android:text="Ounce(Oz)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Metre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Metre2"
+        app:layout_constraintTop_toTopOf="@+id/Gram"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/Pound"
+        android:layout_width="140dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="28dp"
+        android:text="Pound(lb)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Metre3"
+        app:layout_constraintTop_toTopOf="@+id/Gram"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/Metre2"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="193dp"
+        android:text="@string/result2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Metre1" />
+
+    <TextView
+        android:id="@+id/Metre3"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="193dp"
+        android:text="@string/Result3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Metre1" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952"
+        app:srcCompat="@drawable/kg" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="115dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        app:srcCompat="@drawable/measure" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952"
+        app:srcCompat="@drawable/temp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

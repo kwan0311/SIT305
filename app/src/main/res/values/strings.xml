@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="UserEnterValue" />
+    <string name="Result1">TextView</string>
+    <string name="Result3">TextView</string>
+    <string name="contentDescription">Enter a number please</string>
+    <string name="unit_list">Unit List</string>
+    <string name="enter_the_value">Enter the Value</string>
+    <string name="TextHint">eg.8</string>
+
+    <string name="result2">Result2</string>
+    <string-array name="Unit_list">
+        <item>Kilograms</item>
+        <item>Metre</item>
+        <item>Celsius</item>
+
+    </string-array>
+
+
+</resources>
